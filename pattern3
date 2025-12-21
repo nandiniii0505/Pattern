@@ -1,19 +1,14 @@
-//sierpinski triangle 
-
-public class SierpinskiTriangle {
+public class FullPyramid {
     public static void main(String[] args) {
-   int rows = 16;
-  for (int i = 0; i < rows; i++) {
-  for (int space = rows - i; space > 0; space--) {
-                System.out.print(" ");
+int rows = 5;
+for (int i = 1; i <= rows; i++) {
+ for (int space = rows - i; space > 0; space--) {
+ System.out.print(" ");
             }
- for (int j = 0; j <= i; j++) {
-    if ((i & j) == 0)
-        System.out.print("* ");
-    else
-         System.out.print("  ");
+for (int star = 1; star <= 2 * i - 1; star++) {
+                System.out.print("*");
             }
-         System.out.println();
+System.out.println();
         }
     }
 }
