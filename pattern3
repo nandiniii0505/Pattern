@@ -1,30 +1,19 @@
 //sierpinski triangle 
 
-import java.util.*;
-import java.io.*;
-
-class q5
-{
-static void print(int n)
-    {
-for (int y = n - 1; y >= 0; y--) {
-for (int i = 0; i < y; i++) {
-                  System.out.print(" ");
-              }
- for (int x = 0; x + y < n; x++) {
- if ((x & y) != 0)
-                    System.out.print(" "
-                                    + " ");
-                else
-                    System.out.print("* ");
+public class SierpinskiTriangle {
+    public static void main(String[] args) {
+   int rows = 16;
+  for (int i = 0; i < rows; i++) {
+  for (int space = rows - i; space > 0; space--) {
+                System.out.print(" ");
             }
-
-   System.out.print("\n");
+ for (int j = 0; j <= i; j++) {
+    if ((i & j) == 0)
+        System.out.print("* ");
+    else
+         System.out.print("  ");
+            }
+         System.out.println();
         }
-    }
-    public static void main(String args[])
-    {
-     int n = 16;
-      print(n);
     }
 }
