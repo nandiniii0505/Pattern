@@ -5,7 +5,7 @@ D D
 E 
 
 
-class Pattern4 {
+public class Pattern4 {
     public static void main(String[] args) {
 int rows = 5;
 char ch = 'A';
